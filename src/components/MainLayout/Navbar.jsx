@@ -1,12 +1,18 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FiUser } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
 import useAuth from '../../hooks/useAuth';
+import useUsersData from '../../hooks/useUsersData';
 
 
 const Navbar = () => {
-    const { user, logOut } = useAuth();
+    const { user, logOut, loading } = useAuth();
+    const [users] = useUsersData();
+    if (loading) {
+        return <h2></h2>
+    }
+    const current = users.find(userData => userData?.email === user?.email);
+    
     const handleLogOut = e => {
         logOut()
             .then((res) => {
@@ -119,7 +125,15 @@ const Navbar = () => {
                                 <li className="text-sm mb-3">
                                     {user?.email}
                                 </li>
-                                <li><Link className='py-2 font-semibold' to="dashboard">My Dashboard</Link></li>
+                                {
+                                    current?.role === 'admin' && <li><Link className='py-2 font-semibold' to="admin-dashboard/profile">Admin Dashboard</Link></li>
+                                }
+                                {
+                                    current?.role === 'user' && <li><Link className='py-2 font-semibold' to="user-dashboard/profile">Student Dashboard</Link></li>
+                                }
+                                {
+                                    current?.status === 'approved' && <li><Link className='py-2 font-semibold' to="teacher-dashboard/profile">Teacher Dashboard</Link></li>
+                                }
                                 <li><button onClick={handleLogOut} className='py-2 font-semibold'>Logout</button></li>
                             </ul>
                         </div> : <div className='bg-primary hover:bg-accent shadow-sm p-3 rounded-md mx-5 md:mx-0'>

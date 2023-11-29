@@ -8,6 +8,22 @@ import Register from './../pages/Account/Register';
 import Courses from './../pages/Courses/Courses';
 import JoinAsTeacher from './../pages/Account/JoinAsTeacher';
 import AboutUs from '../pages/AboutUs/AboutUs';
+import CourseDetails from '../pages/CourseDetails/CourseDetails';
+import PrivateRoutes from './PrivateRoutes';
+import AdminDashboard from '../pages/Dashboards/AdminDashboard/AdminDashboard';
+import StudentDashboard from '../pages/Dashboards/StudentDashboard/StudentDashboard';
+import TeacherDashboard from '../pages/Dashboards/TeacherDashboard/TeacherDashboard';
+import AdminProfile from './../pages/Dashboards/AdminDashboard/AdminProfile';
+import StudentProfile from './../pages/Dashboards/StudentDashboard/StudentProfile';
+import TeacherProfile from './../pages/Dashboards/TeacherDashboard/TeacherProfile';
+import UsersInfo from '../pages/Dashboards/AdminDashboard/UsersInfo';
+import AppliedInfo from '../pages/Dashboards/AdminDashboard/AppliedInfo';
+import AllClassesInfo from '../pages/Dashboards/AdminDashboard/AllClassesInfo';
+import AddClass from '../pages/Dashboards/TeacherDashboard/AddClass';
+import AddedClasses from '../pages/Dashboards/TeacherDashboard/AddedClasses';
+import StudentClasses from '../pages/Dashboards/StudentDashboard/StudentClasses';
+import AdminRoutes from './AdminRoutes';
+import TeacherRoutes from './TeacherRoutes';
 
 
 const Routes = createBrowserRouter([
@@ -33,15 +49,90 @@ const Routes = createBrowserRouter([
                 element: <Courses></Courses>
             },
             {
+                path: "/course/:id",
+                element: <PrivateRoutes><CourseDetails></CourseDetails></PrivateRoutes>
+            },
+            {
                 path: "/about-us",
                 element: <AboutUs></AboutUs>
             },
             {
                 path: "/join-as-instructor",
-                element: <JoinAsTeacher></JoinAsTeacher>
+                element: <PrivateRoutes><JoinAsTeacher></JoinAsTeacher></PrivateRoutes>
+            },
+        ]
+    },
+
+    // admin routes
+    {
+        path: "admin-dashboard",
+        element: <AdminRoutes><AdminDashboard></AdminDashboard></AdminRoutes>,
+        children: [
+            {
+                path: "profile",
+                element: <AdminRoutes><AdminProfile></AdminProfile></AdminRoutes>
+
+            },
+            {
+                path: "users",
+                element: <AdminRoutes><UsersInfo></UsersInfo></AdminRoutes>
+
+            },
+            {
+                path: "classes",
+                element: <AdminRoutes><AllClassesInfo></AllClassesInfo></AdminRoutes>
+
+            },
+            {
+                path: "request",
+                element: <AdminRoutes><AppliedInfo></AppliedInfo></AdminRoutes>
+
             }
         ]
     },
+
+
+    // normal user & student routes
+    {
+        path: "user-dashboard",
+        element: <PrivateRoutes><StudentDashboard></StudentDashboard></PrivateRoutes>,
+        children: [
+            {
+                path: "profile",
+                element: <PrivateRoutes><StudentProfile></StudentProfile></PrivateRoutes>
+
+            },
+            {
+                path: "class",
+                element: <PrivateRoutes><StudentClasses></StudentClasses></PrivateRoutes>
+
+            }
+        ]
+    },
+
+
+    // teacher routes
+    {
+        path: "teacher-dashboard",
+        element: <TeacherRoutes><TeacherDashboard></TeacherDashboard></TeacherRoutes>,
+        children: [
+            {
+                path: "profile",
+                element: <TeacherRoutes><TeacherProfile></TeacherProfile></TeacherRoutes>
+
+            },
+            {
+                path: "add",
+                element: <TeacherRoutes><AddClass></AddClass></TeacherRoutes>
+
+            },
+            {
+                path: "classes",
+                element: <TeacherRoutes><AddedClasses></AddedClasses></TeacherRoutes>
+
+            }
+        ]
+    }
 ]);
 
 export default Routes;
