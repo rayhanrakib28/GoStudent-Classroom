@@ -92,7 +92,7 @@ const AllClassesInfo = () => {
                                     <th>Short description</th>
                                     <th>Approve</th>
                                     <th>Reject</th>
-                                    <th>See Progress</th>
+                                    <th>See Details</th>
                                 </tr>
                             </thead>
                             <tbody>
