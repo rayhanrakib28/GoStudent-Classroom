@@ -58,7 +58,7 @@ const Navbar = () => {
             >
                 About Us
             </NavLink>
-         </li>
+        </li>
         <li>
             <NavLink
                 to="/join-as-instructor"
@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className='container mx-auto mt-3'>
             <div className="navbar">
                 <div className="navbar-start">
-                    <div className="drawer z-20">
+                    <div className="drawer z-40">
                         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                         <div className="drawer-content flex flex-col">
                             <div className="w-full navbar">
@@ -123,6 +123,9 @@ const Navbar = () => {
                                 </li>
                                 {
                                     current?.role === 'admin' && <li><Link className='py-2 font-semibold' to="admin-dashboard/profile">Admin Dashboard</Link></li>
+                                }
+                                {
+                                    current?.role === 'admin' && <li><Link className='py-2 font-semibold' to="user-dashboard/profile">Student Dashboard</Link></li>
                                 }
                                 {
                                     current?.role === 'user' && <li><Link className='py-2 font-semibold' to="user-dashboard/profile">Student Dashboard</Link></li>

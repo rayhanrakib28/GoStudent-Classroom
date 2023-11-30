@@ -67,13 +67,13 @@ const TeacherDashboard = () => {
                 </div>
             </div>
 
-            <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
+            <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] ">
                 <div className="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
                     <div className="px-6 flex items-center justify-between space-x-4 2xl:container">
-                        <h5 hidden className="text-2xl text-gray-600 font-medium lg:block">Dashboard</h5>
-                        <div className="drawer w-12 h-16 lg:hidden z-20">
+                        <h5 hidden className="text-2xl text-gray-600 font-medium lg:block">Instructor Dashboard</h5>
+                        <div className="drawer w-12 h-16 lg:hidden z-40">
                             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-                            <div className="drawer-content flex items-center flex-col">
+                            <div className="drawer-content flex items-center z-50">
                                 <div className="pt-2">
                                     <div className="flex-none lg:hidden mr-3">
                                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
@@ -82,9 +82,9 @@ const TeacherDashboard = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="drawer-side">
+                            <div className="drawer-side z-50">
                                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                                <ul className="menu flex gap-5 capitalize font-bold text-[#3f4563] p-4 w-80 min-h-full bg-slate-100 pt-10">
+                                <ul className="menu flex gap-5 capitalize font-bold text-[#3f4563] z-50 p-4 w-80 min-h-full bg-slate-100 pt-10">
                                     <li>
                                         <NavLink
                                             to="/teacher-dashboard/profile"

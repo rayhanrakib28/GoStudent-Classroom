@@ -45,7 +45,7 @@ const CourseDetails = () => {
 
     return (
         <div data-aos="fade-up" className='container mx-auto my-10'>
-            <Helmet title={`${courseName} | GS Classroom`} />
+            <Helmet title={`${courseName} Course | GS Classroom`} />
             <div className='relative'>
                 <div className='h-80 bg-white shadow-lg rounded-md flex items-center justify-center'>
                     <h1 className='text-5xl font-semibold'>Course Details</h1>

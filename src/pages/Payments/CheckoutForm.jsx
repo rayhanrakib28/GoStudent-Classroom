@@ -94,7 +94,7 @@ const CheckoutForm = ({courseInfo}) => {
                                 text: "",
                                 icon: "success"
                             });
-                            navigate(`/${role}-dashboard/profile`)
+                            navigate(`/course/${courseInfo?._id}`)
                         }
                     })
             }

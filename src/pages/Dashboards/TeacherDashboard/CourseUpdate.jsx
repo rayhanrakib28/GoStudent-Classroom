@@ -4,7 +4,6 @@ import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import useAuth from '../../../hooks/useAuth';
 import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet';
-import useUserInfo from '../../../hooks/useUserInfo';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 
@@ -26,31 +25,9 @@ const CourseUpdate = () => {
     const course = courses.find(course => course._id == courseId);
     const { courseName, courseCategory, language, certificate, lectures, courseImage, price, shortDescription, detailedDescription} = course || {};
 
-    const userInfo = useUserInfo();
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        const getUser = userInfo?.result;
-        const courseName = data?.courseName;
-        const courseCategory = data?.courseCategory;
-        const courseImage = data?.courseImage;
-        const price = parseFloat(data?.price);
-        const shortDescription = data?.shortDescription;
-        const detailedDescription = data?.detailedDescription;
-        const language = data?.language;
-        const certificate = data?.certificate;
-        const lectures = parseInt(data?.lectures);
-        const updatedCourse = {
-            courseName,
-            courseCategory,
-            courseImage,
-            price,
-            shortDescription,
-            detailedDescription,
-            language,
-            certificate,
-            lectures,
-        };
         Swal.fire({
             title: "Are you sure?",
             text: "",
@@ -61,6 +38,17 @@ const CourseUpdate = () => {
             confirmButtonText: "Yes, Update This Course!"
         }).then((result) => {
             if (result.isConfirmed) {
+                const updatedCourse = {
+                    courseName: data?.courseName,
+                    courseCategory: data?.courseCategory,
+                    courseImage: data?.courseImage,
+                    price: parseFloat(data?.price),
+                    shortDescription: data?.shortDescription,
+                    detailedDescription: data?.detailedDescription,
+                    language: data?.language,
+                    certificate: data?.certificate,
+                    lectures: parseInt(data?.lectures),
+                };
                 axiosSecure.patch(`/api/v1/instructor/update/${courseId}`, updatedCourse)
                     .then(res => {
                         if (res.data?.modifiedCount) {
@@ -69,8 +57,6 @@ const CourseUpdate = () => {
                                 text: "",
                                 icon: "success"
                             });
-                            refetch()
-                            
                         }
                     })
             }
