@@ -49,7 +49,7 @@ const Footer = () => {
 
                 <div class="mt-5 lg:mt-12 flex justify-between">
                     <div class="flex justify-between items-center">
-                        <p class="text-sm text-gray-400">© 2023 GoStudent Classroom. <br className='block md:hidden' /> All rights reserved.</p>
+                        <p class="text-sm text-gray-400">© 2023 GoStudent Classroom. All rights reserved.</p>
                     </div>
 
                     <div>
