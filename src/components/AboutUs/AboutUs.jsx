@@ -13,7 +13,7 @@ const AboutUs = () => {
                             <img src="https://i.ibb.co/TBxKTK6/avatar4.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image"/>
                         </div>
                         <div className="pt-6 text-center">
-                            <p className="text-lg leading-normal font-bold mb-1">Joe Antonio</p>
+                            <p className="text-lg leading-normal font-bold mb-1">Rakibul Islam</p>
                             <p className="text-gray-500 leading-relaxed font-light">Founder CEO</p>
                             
                             <div className="mt-2 mb-5 space-x-2">
@@ -54,7 +54,7 @@ const AboutUs = () => {
                             <img src="https://i.ibb.co/X2mjVfn/avatar1.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image"/>
                         </div>
                         <div className="pt-6 text-center">
-                            <p className="text-lg leading-normal font-bold mb-1">Sarah Daeva</p>
+                            <p className="text-lg leading-normal font-bold mb-1">Daniel Emo</p>
                             <p className="text-gray-500 leading-relaxed font-light">Marketing</p>
                             
                             <div className="mt-2 mb-5 space-x-2">
@@ -96,7 +96,7 @@ const AboutUs = () => {
                             <img src="https://i.ibb.co/CsTkgms/avatar3.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image"/>
                         </div>
                         <div className="pt-6 text-center">
-                            <p className="text-lg leading-normal font-bold mb-1">Daniel Emo</p>
+                            <p className="text-lg leading-normal font-bold mb-1">Sarah Daeva</p>
                             <p className="text-gray-500 leading-relaxed font-light">Sales manager</p>
                             
                             <div className="mt-2 mb-5 space-x-2">
@@ -138,7 +138,7 @@ const AboutUs = () => {
                             <img src="https://i.ibb.co/4WxGPKS/avatar2.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image"/>
                         </div>
                         <div className="pt-6 text-center">
-                            <p className="text-lg leading-normal font-bold mb-1">Toni Lana</p>
+                            <p className="text-lg leading-normal font-bold mb-1">Naymul Hasan</p>
                             <p className="text-gray-500 leading-relaxed font-light">UI/UX Designer</p>
                             
                             <div className="mt-2 mb-5 space-x-2">
