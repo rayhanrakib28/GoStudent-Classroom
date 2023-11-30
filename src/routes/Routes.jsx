@@ -24,6 +24,10 @@ import AddedClasses from '../pages/Dashboards/TeacherDashboard/AddedClasses';
 import StudentClasses from '../pages/Dashboards/StudentDashboard/StudentClasses';
 import AdminRoutes from './AdminRoutes';
 import TeacherRoutes from './TeacherRoutes';
+import Payment from '../pages/Payments/Payment';
+import CourseProgress from './../pages/Dashboards/TeacherDashboard/CourseProgress';
+import CourseUpdate from '../pages/Dashboards/TeacherDashboard/CourseUpdate';
+import StudentClassProgress from '../pages/Dashboards/StudentDashboard/StudentClassProgress';
 
 
 const Routes = createBrowserRouter([
@@ -53,6 +57,10 @@ const Routes = createBrowserRouter([
                 element: <PrivateRoutes><CourseDetails></CourseDetails></PrivateRoutes>
             },
             {
+                path: "/payment/:id",
+                element: <PrivateRoutes><Payment></Payment></PrivateRoutes>
+            },
+            {
                 path: "/about-us",
                 element: <AboutUs></AboutUs>
             },
@@ -60,6 +68,7 @@ const Routes = createBrowserRouter([
                 path: "/join-as-instructor",
                 element: <PrivateRoutes><JoinAsTeacher></JoinAsTeacher></PrivateRoutes>
             },
+            
         ]
     },
 
@@ -106,6 +115,11 @@ const Routes = createBrowserRouter([
                 path: "class",
                 element: <PrivateRoutes><StudentClasses></StudentClasses></PrivateRoutes>
 
+            },
+            {
+                path: "details/:id",
+                element: <PrivateRoutes><StudentClassProgress></StudentClassProgress></PrivateRoutes>
+
             }
         ]
     },
@@ -130,6 +144,14 @@ const Routes = createBrowserRouter([
                 path: "classes",
                 element: <TeacherRoutes><AddedClasses></AddedClasses></TeacherRoutes>
 
+            },
+            {
+                path: "details/:id",
+                element: <TeacherRoutes><CourseProgress></CourseProgress></TeacherRoutes>
+            },
+            {
+                path: "update/:id",
+                element: <TeacherRoutes><CourseUpdate></CourseUpdate></TeacherRoutes>
             }
         ]
     }

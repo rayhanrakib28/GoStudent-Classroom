@@ -3,9 +3,17 @@ import 'react-tabs/style/react-tabs.css';
 import { useLocation, Link } from 'react-router-dom';
 import useCourses from '../../hooks/useCourses';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
+import useAuth from './../../hooks/useAuth';
+import useEnrolled from '../../hooks/useEnrolled';
+import useUserInfo from '../../hooks/useUserInfo';
 
 const CourseDetails = () => {
     const [courses] = useCourses();
+    const enrolledInfo = useEnrolled();
+    const userInfo = useUserInfo();
+    const role = userInfo?.result?.role;
+    const { user } = useAuth();
     const location = useLocation();
     const pathname = location.pathname;
     const [tabIndex, setTabIndex] = useState(0);
@@ -30,8 +38,14 @@ const CourseDetails = () => {
         totalEnrollment,
         courseStatus } = course || {};
 
+    const enrolledCheck = enrolledInfo.find(item => item.courseId == id);
+
+
+
+
     return (
         <div className='container mx-auto my-10'>
+            <Helmet title={`${courseName} | GS Classroom`} />
             <div className='relative'>
                 <div className='h-80 bg-white shadow-lg rounded-md flex items-center justify-center'>
                     <h1 className='text-5xl font-semibold'>Course Details</h1>
@@ -119,9 +133,16 @@ const CourseDetails = () => {
                             </div>
                             <div className="flex items-center justify-between h-24">
                                 <span className="text-3xl font-semibold text-gray-700 ">${price}</span>
-                                <Link to={`/course/${_id}`}>
-                                    <button className="text-white bg-primary hover:bg-accent font-medium rounded-md px-6 py-4 text-center">Pay for enrollment</button>
-                                </Link>
+                                {
+                                    enrolledCheck ? (<Link to={`/${role}-dashboard/profile`}>
+                                        <button className="text-white bg-primary hover:bg-accent font-medium rounded-md px-6 py-4 text-center">Continue</button>
+                                    </Link>)
+                                        :
+                                        (<Link to={`/payment/${_id}`}>
+                                            <button className="text-white bg-primary hover:bg-accent font-medium rounded-md px-6 py-4 text-center">Pay for enrollment</button>
+                                        </Link>)
+                                }
+
                             </div>
                         </div>
                     </div>

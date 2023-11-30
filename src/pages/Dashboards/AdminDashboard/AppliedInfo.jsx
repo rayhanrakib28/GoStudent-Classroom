@@ -2,13 +2,14 @@ import React from 'react';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import { useQuery } from '@tanstack/react-query';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const AppliedInfo = () => {
     const axiosSecure = useAxiosSecure();
     const { data: requests = [], refetch } = useQuery({
         queryKey: ['requests'],
         queryFn: async () => {
-            const res = await axiosSecure.get('/api/v1/users/requests');
+            const res = await axiosSecure.get('/api/v1/users/private');
             return res.data;
         },
     })
@@ -70,6 +71,7 @@ const AppliedInfo = () => {
 
     return (
         <div className='px-5 lg:px-0'>
+            <Helmet title={`Instructor Post Applicants | GS Classroom`} />
             <div className='max-w-3xl mx-auto mt-10'>
                 <h2 className='capitalize text-2xl font-semibold'>total applied requests: {requests.length} </h2>
             </div>
@@ -101,8 +103,8 @@ const AppliedInfo = () => {
                                             <td>{user?.displayName}</td>
                                             <td>{user?.experience}</td>
                                             <td>{user?.title}</td>
-                                            <td>{user?.status}</td>
                                             <td>{user?.category}</td>
+                                            <td>{user?.status}</td>
                                             <td>
                                                 {
                                                     user?.status === "approved" || user?.status === "rejected" ? '' : <button onClick={() => handleMakeInstructor(user)}><img className='w-8 h-8 object-cover' src="https://i.ibb.co/fH1wg4J/approved.png" alt="" /></button>
@@ -118,10 +120,10 @@ const AppliedInfo = () => {
                                     )
                                 }
                             </tbody>
-                        </table>) : (<div className = 'flex items-center justify-center'><img src = "https://cdn.dribbble.com/userupload/10929242/file/original-738cfc1549ed4c3176b5782d6b09c011.png" alt = "" /></div>)
+                        </table>) : (<div className='flex items-center justify-center'><img src="https://i.ibb.co/CKTK7fD/loadData.png" alt="" /></div>)
                     }
+                </div>
             </div>
-        </div>
         </div >
     );
 };
