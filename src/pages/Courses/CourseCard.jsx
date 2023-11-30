@@ -20,7 +20,10 @@ const CourseCard = ({ course }) => {
                                 <h3 className="text-secondary font-semibold text-base lg:text-xl tracking-tight my-2">{courseName}</h3>
                             </a>
                         </Link>
-                        <TruncatedText text={shortDescription} wordCount={7} />
+                        <div>
+                            <TruncatedText text={shortDescription} wordCount={4} /> ...
+                        </div>
+                        
                         <h3 className="text-secondary font-medium text-sm tracking-tight my-2">Instructor: {instructorName}</h3>
                         <div className="flex items-center my-2">
                             <FaUserFriends className="text-primary text-xl" />

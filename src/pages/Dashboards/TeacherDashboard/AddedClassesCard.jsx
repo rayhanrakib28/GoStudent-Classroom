@@ -68,7 +68,10 @@ const AddedClassesCard = ({ course, refetch }) => {
                             <a>
                                 <h3 className="text-secondary font-semibold text-base tracking-tight">{courseName}</h3>
                         </a>
-                        <TruncatedText text={shortDescription} wordCount={5} />
+                        <div>
+                            <TruncatedText text={shortDescription} wordCount={4} /> ...
+                        </div>
+                        
                         <h3 className="text-secondary font-medium text-sm tracking-tight my-2">Instructor Name: {instructorName}</h3>
                         <h3 className="text-secondary text-xs tracking-tight">Instructor Email: {instructorEmail}</h3>
                         <div className="flex items-center my-3">
