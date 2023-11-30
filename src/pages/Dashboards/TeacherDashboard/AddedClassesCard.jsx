@@ -39,7 +39,7 @@ const AddedClassesCard = ({ course, refetch }) => {
     return (
         <div className="border-gray-100 border rounded-lg">
             <div className="bg-white shadow-md hover:shadow-xl rounded-lg px-5 pt-5 w-80 lg:w-80 h-[500px] lg:h-[490px]">
-                <a className='w-full group relative block overflow-hidden'>
+                <div className='w-full group relative block overflow-hidden'>
                     <Link to={`/teacher-dashboard/update/${_id}`}>
                         <button
                             className="absolute end-4 top-16 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75 hover:bg-primary"
@@ -56,15 +56,12 @@ const AddedClassesCard = ({ course, refetch }) => {
                             <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#002B44" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"> <path d="M10 12V17" stroke="#002B44" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 12V17" stroke="#002B44" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4 7H20" stroke="#002B44" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10" stroke="#002B44" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke="#002B44" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                         </button>
                     }
-                    
-
-
                     <img
                         src={courseImage}
                         alt=""
                         className=" h-60 w-fit object-cover transition duration-500 group-hover:scale-105 rounded-md"
                     />
-                </a>
+                </div>
                 <div className="mt-4 flex flex-col justify-between h-[200px] lg:h-[220px] gap-2 lg:gap-0">
                     <div className="flex flex-col justify-between h-24">
                             <a>
