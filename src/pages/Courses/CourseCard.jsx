@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const CourseCard = ({ course }) => {
     const { _id, courseName, shortDescription, instructorName, courseImage, totalEnrollment, price } = course;
     return (
-        <div className="border-gray-100 border rounded-lg">
+        <div data-aos="fade-up" className="border-gray-100 border rounded-lg">
             <div className="bg-white shadow-md hover:shadow-xl rounded-lg px-5 pt-5 w-80 lg:w-96 h-[500px] lg:h-[490px]">
                 <Link to={`/course/${_id}`}>
                     <a className="rounded-md">
