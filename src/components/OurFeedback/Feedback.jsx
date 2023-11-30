@@ -21,7 +21,7 @@ const Feedback = () => {
         <div className='py-10'>
             <SectionTitle heading="Success Stories" subheading="Real Feedback, Real Growth." />
             <div className='flex flex-col lg:flex-row items-center gap-x-10 mt-5'>
-                <div data-aos="fade-right" className='lg:relative m-10'>
+                <div data-aos="fade-up" className='lg:relative m-10'>
                     <img className='w-[800px] hidden lg:block object-cover' src="https://i.ibb.co/D4ckjdK/user3.jpg" alt="" />
                     <img className='w-[800px] block lg:hidden object-cover rounded-md' src="https://i.ibb.co/rQJM3Vn/user4.jpg" alt="" />
                     <div className='hidden lg:block absolute -left-12 -bottom-12 '>
