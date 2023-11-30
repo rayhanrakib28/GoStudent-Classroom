@@ -3,10 +3,10 @@ import SectionTitle from './../../shared/SectionTitle';
 
 const AboutUs = () => {
     return (
-        <div>
+        <div data-aos="fade-up">
             <SectionTitle heading="Our Team Members" subheading="Meet the Minds Shaping Your Learning Experience"></SectionTitle>
-            <div className="flex flex-wrap flex-row -mx-4 justify-center mt-16">
-                <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
+            <div className="flex flex-wrap flex-row justify-center mt-16">
+                <div data-aos="fade-right" className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
                     <div className="relative overflow-hidden bg-white mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s">
                      
                         <div className="relative overflow-hidden px-6">
@@ -47,7 +47,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
+                <div data-aos="fade-right" className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
                     
                     <div className="relative overflow-hidden bg-white  mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" >
                         <div className="relative overflow-hidden px-6">
@@ -89,7 +89,7 @@ const AboutUs = () => {
                     </div>
                     
                 </div>
-                <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
+                <div data-aos="fade-right" className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
                     
                     <div className="relative overflow-hidden bg-white  mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" >
                         <div className="relative overflow-hidden px-6">
@@ -131,7 +131,7 @@ const AboutUs = () => {
                     </div>
                     
                 </div>
-                <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
+                <div data-aos="fade-right" className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
                     
                     <div className="relative overflow-hidden bg-white  mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" >
                         <div className="relative overflow-hidden px-6">

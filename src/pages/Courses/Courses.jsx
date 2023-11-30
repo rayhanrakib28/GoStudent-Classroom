@@ -16,7 +16,7 @@ const Courses = () => {
     }
 
     return (
-        <div className=''>
+        <div data-aos="fade-up">
             <Helmet title={`Courses | GS Classroom`} />
             <div className='container mx-auto min-h-screen'>
                 <div className=''>
@@ -55,7 +55,7 @@ const Courses = () => {
                                         {
                                             isLoading ? (<div className='w-full flex justify-center items-center justify-items-center'><img className='w-80' src="https://i.ibb.co/TqhV9yt/loading.gif" alt="" /></div>)
                                                 :
-                                                (<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
+                                                (<div data-aos="fade-up" className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
                                                     {
                                                         allCourses?.map(course => <CourseCard key={course._id} course={course} ></CourseCard>)
                                                     }

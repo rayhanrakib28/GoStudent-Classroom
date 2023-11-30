@@ -22,7 +22,7 @@ const OurCourses = () => {
             </div>
 
             {/* large screen */}
-            <div className='mt-10 hidden lg:block'>
+            <div data-aos="fade-up" className='mt-10 hidden lg:block'>
 
                 <Swiper
                     slidesPerView={3}
@@ -64,7 +64,7 @@ const OurCourses = () => {
 
             </div>
             {/* medium screen */}
-            <div className='mt-10 hidden md:block lg:hidden'>
+            <div data-aos="fade-up" className='mt-10 hidden md:block lg:hidden'>
 
                 <Swiper
                     slidesPerView={2}
@@ -106,7 +106,7 @@ const OurCourses = () => {
 
             </div>
             {/* small screen */}
-            <div className='mt-10 block md:hidden'>
+            <div data-aos="fade-up" className='mt-10 block md:hidden'>
 
                 <Swiper
                     slidesPerView={1}

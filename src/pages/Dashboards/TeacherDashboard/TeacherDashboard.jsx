@@ -26,7 +26,7 @@ const TeacherDashboard = () => {
                             <NavLink
                                 to="/teacher-dashboard/profile"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                    isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                 }
                             >
                                 Profile
@@ -36,7 +36,7 @@ const TeacherDashboard = () => {
                             <NavLink
                                 to="/teacher-dashboard/add"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                    isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                 }
                             >
                                 Add class
@@ -46,7 +46,7 @@ const TeacherDashboard = () => {
                             <NavLink
                                 to="/teacher-dashboard/classes"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                    isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                 }
                             >
                                 My class
@@ -55,7 +55,7 @@ const TeacherDashboard = () => {
                     </ul>
                 </div>
 
-                <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
+                <div class="px-6 pt-4 flex justify-between items-center border-t">
                     <Link to="/">
                         <button class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -89,7 +89,7 @@ const TeacherDashboard = () => {
                                         <NavLink
                                             to="/teacher-dashboard/profile"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             Profile
@@ -99,7 +99,7 @@ const TeacherDashboard = () => {
                                         <NavLink
                                             to="/teacher-dashboard/add"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             Add class
@@ -109,7 +109,7 @@ const TeacherDashboard = () => {
                                         <NavLink
                                             to="/teacher-dashboard/classes"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             My class
@@ -119,7 +119,7 @@ const TeacherDashboard = () => {
                                         <NavLink
                                             to="/"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             Back To Home

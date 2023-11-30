@@ -3,7 +3,7 @@ import SectionTitle from './../../shared/SectionTitle';
 
 const Faq = () => {
     return (
-        <div>
+        <div data-aos="fade-up">
             <div className="max-w-[85rem] px-4 py-16 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
                     <SectionTitle heading="Frequently Asked Questions" />

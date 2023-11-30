@@ -55,7 +55,7 @@ const Login = () => {
 
 
     return (
-        <div className='container mx-auto'>
+        <div data-aos="fade-up" className='container mx-auto'>
             <Helmet title={`Sign In | GS Classroom`} />
             <div class="flex overflow-hidden items-center gap-5">
                 <div class="w-full md:w-1/2 py-12 px-4 sm:px-6 md:py-20 md:px-8">

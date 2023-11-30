@@ -27,7 +27,7 @@ const AdminDashboard = () => {
                             <NavLink
                                 to="/admin-dashboard/profile"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                    isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                 }
                             >
                                 Profile
@@ -37,7 +37,7 @@ const AdminDashboard = () => {
                             <NavLink
                                 to="/admin-dashboard/classes"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                    isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                 }
                             >
                                 All classes
@@ -47,7 +47,7 @@ const AdminDashboard = () => {
                             <NavLink
                                 to="/admin-dashboard/request"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                    isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                 }
                             >
                                 Teacher Request
@@ -57,7 +57,7 @@ const AdminDashboard = () => {
                             <NavLink
                                 to="/admin-dashboard/users"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                    isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                 }
                             >
                                 Users
@@ -66,7 +66,7 @@ const AdminDashboard = () => {
                     </ul>
                 </div>
 
-                <div className="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
+                <div className="px-6  pt-4 flex justify-between items-center border-t">
                     <Link to="/">
                         <button className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -102,7 +102,7 @@ const AdminDashboard = () => {
                                         <NavLink
                                             to="/admin-dashboard/profile"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             Profile
@@ -112,7 +112,7 @@ const AdminDashboard = () => {
                                         <NavLink
                                             to="/admin-dashboard/classes"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             All classes
@@ -122,7 +122,7 @@ const AdminDashboard = () => {
                                         <NavLink
                                             to="/admin-dashboard/request"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             Teacher Request
@@ -132,7 +132,7 @@ const AdminDashboard = () => {
                                         <NavLink
                                             to="/admin-dashboard/users"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             Users
@@ -142,7 +142,7 @@ const AdminDashboard = () => {
                                         <NavLink
                                             to="/"
                                             className={({ isActive, isPending }) =>
-                                                isPending ? "pending" : isActive ? "-mr-1 font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+                                                isPending ? "pending" : isActive ? " font-medium px-4 py-3 flex items-center space-x-4 rounded-md text-white bg-gradient-to-r from-primary to-green-600" : "px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
                                             }
                                         >
                                             Back To Home

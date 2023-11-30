@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 
 const Error = () => {
     return (
-        <div className=''>
+        <div data-aos="fade-up">
             <Helmet title='Error | GS Classroom' />
-            <div className='flex flex-col justify-center justify-items-center items-center min-h-screen'>
+            <div data-aos="fade-right" className='flex flex-col justify-center justify-items-center items-center min-h-screen'>
                 <div className='flex flex-col justify-center items-center'>
                     <img src="https://i.ibb.co/LNbVYkZ/error.png" alt="404" className="text-2xl w-full md:w-[85%]" />
                     <h2 className='text-2xl md:text-4xl my-3 capitalize  font-bold text-slate-800'>Oops... Page Not Found!</h2>

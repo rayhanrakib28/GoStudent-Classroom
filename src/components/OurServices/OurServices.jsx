@@ -14,7 +14,7 @@ const OurServices = () => {
     return (
         <div className='px-5 lg:px-0'>
             <SectionTitle heading="WHY CHOOSE US" subheading="Explore the Numbers Behind Our Educational Impact"></SectionTitle>
-            <div className='w-full flex flex-col lg:flex-row items-center gap-4 mt-10'>
+            <div data-aos="fade-up" className='w-full flex flex-col lg:flex-row items-center gap-4 mt-10'>
                 <div className='w-full lg:w-1/2'>
                     <h1 className='text-xl lg:text-3xl font-semibold text-primary w-full pr-2 lg:pr-0 lg:w-1/2 mb-4'>Creating A Community Of Life Long Learners</h1>
                     <p>Explore the impact of learning with GoStudent Classroom through our key statistics. From enrollment numbers to successful course completions, our site stats reflect the thriving community of learners achieving their educational goals on our platform. Join the numbers and embark on your learning journey with us.</p>

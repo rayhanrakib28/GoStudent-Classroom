@@ -9,10 +9,10 @@ const BecomeInstructor = () => {
             <SectionTitle heading="Become an Instructor" subheading="Inspire learners worldwide" />
             <div className="pt-12 bg-blueGray-50">
                 <div className="items-center justify-between flex flex-col lg:flex-row gap-5">
-                    <div className="w-full lg:w-5/12 ml-auto mr-auto px-4">
+                    <div data-aos="fade-right" className="w-full lg:w-5/12 ml-auto mr-auto px-4">
                         <img alt="..." className="w-full h-80 md:h-96 lg:h-[600px] rounded-lg shadow-2xl object-cover" src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"/>
                     </div>
-                    <div className="w-full lg:w-7/12 ml-auto mr-auto px-4">
+                    <div data-aos="fade-left" className="w-full lg:w-7/12 ml-auto mr-auto px-4">
                         <div className="md:pr-12">
                             <div className="text-xl text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-xl rounded-full bg-accent mt-8 lg:mt-0">
                                 <FaRocket/>
